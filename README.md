@@ -1,5 +1,7 @@
 lcota.github.io
 ===============
+#### Cool Articles
+[Duolingo's Halflife Regression](http://making.duolingo.com/how-we-learn-how-you-learn)  
 
 #### Visualization & Analysis
 Airbnb's Superset: [Source](https://github.com/airbnb/superset) | [Docs](http://airbnb.io/superset/)  
