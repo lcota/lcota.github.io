@@ -2,7 +2,7 @@ lcota.github.io
 ===============
 
 #### Visualization & Analysis
-[Superset](https://github.com/airbnb/superset) | [Superset Docs](http://airbnb.io/superset/)  
+[Superset](https://github.com/airbnb/superset) | [Documentation](http://airbnb.io/superset/)  
 [Dataiku](http://www.dataiku.com/)  
 
 ##### Python Links  
