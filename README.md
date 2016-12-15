@@ -8,6 +8,8 @@ lcota.github.io
 [HyperGrid - HTML5 Realtime Grid](https://github.com/openfin/fin-hypergrid)
 [Anaconda Mosaic](https://docs.continuum.io/anaconda/mosaic/)
 [Anaconda Fusion](https://docs.continuum.io/anaconda/fusion/#how-to-get-fusion)
+[PhosphorJS](https://phosphorjs.github.io/)  
+
 
 #### Visualization & Analysis
 Airbnb's Superset: [Source](https://github.com/airbnb/superset) | [Docs](http://airbnb.io/superset/)  
