@@ -5,9 +5,9 @@ lcota.github.io
 [FRP in Python Article](https://jakubturek.com/functional-reactive-programming-in-python/)
 
 ### Libraries for Reactive Programming in Python
-https://github.com/ReactiveX/RxPY
-https://github.com/kachayev/fn.py
-https://github.com/EntilZha/PyFunctional
+https://github.com/ReactiveX/RxPY  
+https://github.com/kachayev/fn.py  
+https://github.com/EntilZha/PyFunctional  
 
 _Not quite reactive, but functional programming_
 https://github.com/evhub/coconut
