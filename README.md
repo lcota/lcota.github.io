@@ -8,6 +8,7 @@ lcota.github.io
 [George Gopen and Judith Swan](http://engineering.missouri.edu/civil/files/science-of-writing.pdf)  
 
 #### Cool Articles
+[Green Tea Press - Free eBooks](http://greenteapress.com/wp/)
 [Duolingo's Halflife Regression](http://making.duolingo.com/how-we-learn-how-you-learn)  
 
 
