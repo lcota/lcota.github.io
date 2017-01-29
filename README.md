@@ -21,7 +21,7 @@ lcota.github.io
 
 #### Visualization & Analysis
 Airbnb's Superset: [Source](https://github.com/airbnb/superset) | [Docs](http://airbnb.io/superset/)  
-[Dataiku](http://www.dataiku.com/)  
+
 
 ##### Python Links  
 [FRP in Python Article](https://jakubturek.com/functional-reactive-programming-in-python/)
