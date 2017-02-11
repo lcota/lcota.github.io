@@ -2,6 +2,7 @@ lcota.github.io
 ===============
 #### Coding Tools  
 [nteract - literate programming for jupyter](https://github.com/nteract/nteract)  
+[nteract blog post](https://medium.com/nteract/nteract-revolutionizing-the-notebook-experience-d106ca5d2c38#.hwbfoxdma  )
 
 #### Scientific Writing Handouts
 [Marie Davidian](http://www4.stat.ncsu.edu/~davidian/st810a/written_handout.pdf)  
