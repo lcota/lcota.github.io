@@ -1,5 +1,7 @@
 lcota.github.io
 ===============
+#### Coding Tools  
+[nteract - literate programming for jupyter](https://github.com/nteract/nteract)  
 
 #### Scientific Writing Handouts
 [Marie Davidian](http://www4.stat.ncsu.edu/~davidian/st810a/written_handout.pdf)  
@@ -40,3 +42,16 @@ https://github.com/pytoolz/toolz
 
 #### R Links  
 https://cran.r-project.org/web/packages/obAnalytics/vignettes/guide.html
+
+
+#### Windows Utilities
+[Locate32 - file search](http://locate32.cogit.net/)  
+[CMD Prompt Tricks](http://www.articpost.com/unknown-command-prompt-tricks/)  
+[FreeCommander - Explorer Replacement](http://freecommander.com/en/summary/)  
+[Explorer Replacements](https://www.slant.co/topics/2404/~file-managers-for-windows?)  
+[NexusFont, NexusImage](http://www.xiles.net/)  
+[Power Utilities - Lifehacker](http://lifehacker.com/287966/power-replacements-for-built-in-windows-utilities)  
+[Process Explorer](https://technet.microsoft.com/en-us/sysinternals/bb896653.aspx)  
+[Everything File Search](http://www.voidtools.com/)  
+[Mendeley PDF Article Management](https://www.mendeley.com/)  
+[Copernic Desktop Search](http://www.copernic.com/en/products/desktop-search/home/index.html)  
