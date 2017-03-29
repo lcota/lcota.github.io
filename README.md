@@ -1,6 +1,19 @@
 lcota.github.io
 ===============
+
+#### Backtesting Python Libs  
+[BackTrader](https://www.backtrader.com/)  
+[BackTrader Github](https://github.com/mementum/backtrader)  
+[pysystemtrade](https://github.com/robcarver17/pysystemtrade)  
+[BT](http://pmorissette.github.io/bt/)  
+[PyAlgoTrade](https://github.com/gbeced/pyalgotrade)  
+[qtpylib](https://github.com/ranaroussi/qtpylib)    
+[prophet](https://github.com/Emsu/prophet)  
+[QuantSoftware Toolkit](http://wiki.quantsoftware.org/index.php?title=QuantSoftware_ToolKit)  
+
 #### Coding Tools  
+[Byte of ViM - ViM Tutorial](https://vim.swaroopch.com/)
+[Pragmatic Programmer ViM](https://pragprog.com/book/dnvim2/practical-vim-second-edition)  
 [nteract - literate programming for jupyter](https://github.com/nteract/nteract)  
 [nteract blog post](https://medium.com/nteract/nteract-revolutionizing-the-notebook-experience-d106ca5d2c38#.hwbfoxdma  )
 
@@ -56,3 +69,6 @@ https://cran.r-project.org/web/packages/obAnalytics/vignettes/guide.html
 [Everything File Search](http://www.voidtools.com/)  
 [Mendeley PDF Article Management](https://www.mendeley.com/)  
 [Copernic Desktop Search](http://www.copernic.com/en/products/desktop-search/home/index.html)  
+
+
+#### Misc Useful Tools & Code Projects

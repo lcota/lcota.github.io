@@ -15,3 +15,9 @@ https://github.com/cuemacro/finmarketpy
 https://github.com/cuemacro/findatapy  
 https://github.com/cuemacro/chartpy  
 http://vispy.org/  
+
+https://github.com/jonathanslenders/pymux/
+https://github.com/jonathanslenders/pyvim/
+https://github.com/jonathanslenders/ptpython/
+https://github.com/xonsh/xonsh
+https://github.com/ergonomica/ergonomica
