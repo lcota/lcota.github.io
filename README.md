@@ -11,6 +11,12 @@ lcota.github.io
 [prophet](https://github.com/Emsu/prophet)  
 [QuantSoftware Toolkit](http://wiki.quantsoftware.org/index.php?title=QuantSoftware_ToolKit)  
 
+
+#### Data Analysis / Pandas Links  
+[Modern Pandas - misc tips using pandas](http://tomaugspurger.github.io/modern-6-visualization.html)  
+
+
+
 #### Coding Tools  
 [Byte of ViM - ViM Tutorial](https://vim.swaroopch.com/)
 [Pragmatic Programmer ViM](https://pragprog.com/book/dnvim2/practical-vim-second-edition)  
@@ -38,6 +44,8 @@ lcota.github.io
 
 #### Visualization & Analysis
 Airbnb's Superset: [Source](https://github.com/airbnb/superset) | [Docs](http://airbnb.io/superset/)  
+[GR Framework - Plotting Library](http://gr-framework.org/)  
+[Misc Plotting Links](https://wiki.python.org/moin/NumericAndScientific/Plotting)  
 
 
 ##### Python Links  
