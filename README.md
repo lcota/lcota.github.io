@@ -68,6 +68,7 @@ https://cran.r-project.org/web/packages/obAnalytics/vignettes/guide.html
 
 
 #### Windows Utilities
+[file search utils - slant](https://www.slant.co/topics/4033/~windows-tools-for-finding-files)  
 [Locate32 - file search](http://locate32.cogit.net/)  
 [CMD Prompt Tricks](http://www.articpost.com/unknown-command-prompt-tricks/)  
 [FreeCommander - Explorer Replacement](http://freecommander.com/en/summary/)  
@@ -78,6 +79,7 @@ https://cran.r-project.org/web/packages/obAnalytics/vignettes/guide.html
 [Everything File Search](http://www.voidtools.com/)  
 [Mendeley PDF Article Management](https://www.mendeley.com/)  
 [Copernic Desktop Search](http://www.copernic.com/en/products/desktop-search/home/index.html)  
+[Window Tilers / Window Managers](https://www.slant.co/topics/1249/~window-managers-for-windows)  
 
 
 #### Misc Useful Tools & Code Projects
