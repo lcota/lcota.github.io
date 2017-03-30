@@ -28,7 +28,8 @@ lcota.github.io
 [Duolingo's Halflife Regression](http://making.duolingo.com/how-we-learn-how-you-learn)  
 
 
-#### UI Frameworks
+#### UI Frameworks  
+[Kivy - app framework in python!](https://github.com/kivy-garden)  
 [HyperGrid - HTML5 Realtime Grid](https://github.com/openfin/fin-hypergrid)
 [Anaconda Mosaic](https://docs.continuum.io/anaconda/mosaic/)
 [Anaconda Fusion](https://docs.continuum.io/anaconda/fusion/#how-to-get-fusion)
