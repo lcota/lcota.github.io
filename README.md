@@ -1,20 +1,8 @@
 lcota.github.io
 ===============
 
-#### Backtesting Python Libs  
-[BackTrader](https://www.backtrader.com/)  
-[BackTrader Github](https://github.com/mementum/backtrader)  
-[pysystemtrade](https://github.com/robcarver17/pysystemtrade)  
-[BT](http://pmorissette.github.io/bt/)  
-[PyAlgoTrade](https://github.com/gbeced/pyalgotrade)  
-[qtpylib](https://github.com/ranaroussi/qtpylib)    
-[prophet](https://github.com/Emsu/prophet)  
-[QuantSoftware Toolkit](http://wiki.quantsoftware.org/index.php?title=QuantSoftware_ToolKit)  
-
-
 #### Data Analysis / Pandas Links  
 [Modern Pandas - misc tips using pandas](http://tomaugspurger.github.io/modern-6-visualization.html)  
-
 
 
 #### Coding Tools  
@@ -34,33 +22,24 @@ lcota.github.io
 [Duolingo's Halflife Regression](http://making.duolingo.com/how-we-learn-how-you-learn)  
 
 
-#### UI Frameworks  
+#### Application / GUI Frameworks  
 [Kivy - app framework in python!](https://github.com/kivy-garden)  
 [HyperGrid - HTML5 Realtime Grid](https://github.com/openfin/fin-hypergrid)
 [Anaconda Mosaic](https://docs.continuum.io/anaconda/mosaic/)
 [Anaconda Fusion](https://docs.continuum.io/anaconda/fusion/#how-to-get-fusion)
 [PhosphorJS](https://phosphorjs.github.io/)  
+[Photon - Electron Framework](https://github.com/connors/photon)  
+[Electron Sample Applications](https://electron.atom.io/apps/)  
 
 
 #### Visualization & Analysis
-Airbnb's Superset: [Source](https://github.com/airbnb/superset) | [Docs](http://airbnb.io/superset/)  
+[Airbnb's Superset](https://github.com/airbnb/superset) | [Docs](http://airbnb.io/superset/)  
 [GR Framework - Plotting Library](http://gr-framework.org/)  
 [Misc Plotting Links](https://wiki.python.org/moin/NumericAndScientific/Plotting)  
 
 
 ##### Python Links  
 [FRP in Python Article](https://jakubturek.com/functional-reactive-programming-in-python/)
-
-##### Libraries for Reactive Programming in Python
-https://github.com/ReactiveX/RxPY  
-https://github.com/kachayev/fn.py  
-https://github.com/EntilZha/PyFunctional  
-
-_Not quite reactive, but functional programming_
-https://github.com/evhub/coconut
-
-##### Misc Python Libraries
-https://github.com/pytoolz/toolz
 
 
 #### R Links  
@@ -83,3 +62,10 @@ https://cran.r-project.org/web/packages/obAnalytics/vignettes/guide.html
 
 
 #### Misc Useful Tools & Code Projects
+[Docutils - Converts RST or MD docs man pages or html/latex](http://docutils.sourceforge.net/index.html)  
+[Comparison between markup formats](http://hyperpolyglot.org/lightweight-markup)  
+[Speeding up Python Code](https://www.ibm.com/developerworks/community/blogs/jfp/entry/Python_Meets_Julia_Micro_Performance?lang=en)  
+[Documenting Python Code](https://docs.python.org/devguide/documenting.html)  
+[Sphinx Docs Generator](http://www.sphinx-doc.org/en/stable/contents.html)  
+[Cerebro - file manager replacement??](https://cerebroapp.com/)  
+[Zazo - Electron Launcher](http://zazuapp.org/)  

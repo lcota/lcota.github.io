@@ -21,3 +21,15 @@ https://github.com/jonathanslenders/pyvim/
 https://github.com/jonathanslenders/ptpython/
 https://github.com/xonsh/xonsh
 https://github.com/ergonomica/ergonomica
+
+
+##### Libraries for Reactive Programming in Python
+https://github.com/ReactiveX/RxPY  
+https://github.com/kachayev/fn.py  
+https://github.com/EntilZha/PyFunctional  
+
+_Not quite reactive, but functional programming_
+https://github.com/evhub/coconut
+
+##### Misc Python Libraries
+https://github.com/pytoolz/toolz
