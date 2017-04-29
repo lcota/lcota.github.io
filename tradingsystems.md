@@ -13,6 +13,8 @@ Trading Software and Libraries
 
 
 #### Trading Platforms  
+[terminal - bloomberg-like cmd line](https://github.com/intuition-io/terminal)  
+[intuition-io -> terminal, trading libs](https://github.com/intuition-io)  
 [Quant Connect](https://www.quantconnect.com/)  
 [Quant Connect Git Repo](https://github.com/QuantConnect/Lean)  
 [Eclipse Trader](http://www.eclipsetrader.org/wiki/Documentation)  

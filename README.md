@@ -69,3 +69,5 @@ https://cran.r-project.org/web/packages/obAnalytics/vignettes/guide.html
 [Sphinx Docs Generator](http://www.sphinx-doc.org/en/stable/contents.html)  
 [Cerebro - file manager replacement??](https://cerebroapp.com/)  
 [Zazo - Electron Launcher](http://zazuapp.org/)  
+
+[Brandon Rhodes](http://rhodesmill.org/brandon/)  
