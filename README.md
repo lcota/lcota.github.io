@@ -40,7 +40,7 @@ lcota.github.io
 
 ##### Python Links  
 [FRP in Python Article](https://jakubturek.com/functional-reactive-programming-in-python/)
-
+[Python Design Patterns](https://www.toptal.com/python/python-design-patterns)  
 
 #### R Links  
 https://cran.r-project.org/web/packages/obAnalytics/vignettes/guide.html
