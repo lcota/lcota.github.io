@@ -1,7 +1,0 @@
-{
-  "name": "lcota.github.io",
-  "tagline": "",
-  "body": "lcota.github.io\r\n===============\r\n\r\n#### Visualization & Analysis\r\nAirbnb's Superset: [Source](https://github.com/airbnb/superset) | [Docs](http://airbnb.io/superset/)  \r\n[Dataiku](http://www.dataiku.com/)  \r\n\r\n##### Python Links  \r\n[FRP in Python Article](https://jakubturek.com/functional-reactive-programming-in-python/)\r\n\r\n##### Libraries for Reactive Programming in Python\r\nhttps://github.com/ReactiveX/RxPY  \r\nhttps://github.com/kachayev/fn.py  \r\nhttps://github.com/EntilZha/PyFunctional  \r\n\r\n_Not quite reactive, but functional programming_\r\nhttps://github.com/evhub/coconut\r\n\r\n##### Misc Python Libraries\r\nhttps://github.com/pytoolz/toolz\r\n\r\n\r\n#### R Links  \r\nhttps://cran.r-project.org/web/packages/obAnalytics/vignettes/guide.html\r\n",
-  "google": "",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
