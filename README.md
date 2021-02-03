@@ -72,20 +72,3 @@ https://cran.r-project.org/web/packages/obAnalytics/vignettes/guide.html
 
 [Brandon Rhodes](http://rhodesmill.org/brandon/)  
 
-Thank you for providing the detailed feedback, I appreciate the time and effort made. I am a bit surprised about some of the comments, as they do not reflect our discussions and my notes. The need for written parameters on projects is seen in this situation. I need to reiterate that one of the most important accommodations requests was that of receiving written tasks, where possible, to reduce communication errors. While I can summarize what we speak about each time we have a call, what I notice happening is that the verbal recollection of those calls varies quite a lot from the notes taken during the call. One proposal I have to help alleviate this style of miscommunication is that I pro-actively summarize all of our calls and email those out with a meeting-minutes style summary.
-
-I try to avoid this type of situation by taking detailed  notes using MS Office tools, as I rely on them to help me address aspects of my disabilities. While you once celebrated this tool, it now feels as if you are objecting to  my use of these tools.  These tools have become important for me as my ability to take detailed notes is one of the techniques I use to proactively reduce the impact of my disabilities. 
-
-When we first spoke of the first part of the streaming algorithm projects on Tuesday, January 19th, it seemed we both had a mutual understanding of what was expected. It would take about a week to review the provided papers and summarize them with the primary focus being these points:
-Identify any memory requirements that can be fixed and pre-allocated
-Identify methods whose performance could be further enhanced with numpy and numba
-Sketch out some notes about what would be needed to implement the algorithms proposed
-
-
-We had a follow up conversation about this on Jan 21, which I requested to ensure we both had a mutual understanding of what was expected. We came out of this call agreeing that the approach I was taking was on point for the current phase of this project. During this call, you expressed clearly that no Python code was expected when we revisited my summaries the following week. On the 21st, we also discussed in considerable detail the pitfalls of T-Digest’s second algorithm, which required balanced search trees (AVL and Red-Black trees were proposed). You explicitly stated that while we can use C++ libraries to work with numba, and I suggested a few such implementations of these libraries, that our time, or my time, was more productively spent focusing on HistoryPCA due to its self-contained nature, as it does not require any additional data structures beyond it’s numerical algorithm. 
-
-I was quite happy following our call on January 26th, where you expressed that I had gone into the algorithms more deeply than you had gone into them, or more deeply than you anticipated for this stage. During this call we also addressed the issues you raised in your comments. Those precise measures were very clearly presented during our screen share, which led to our decision to pursue an initial naive implementation of HistoryPCA and run some empirical tests comparing its performance with different parameters. 
-
-Also along with our discussion on the 26th, I began the initial work of implementing the algorithms to empirically evaluate HistoryPCA’s performance with respect to it’s tuning parameters, results which I shared in the team chat. Your email this morning implied little work, or incorrect work, had been performed, while my contributions to the team chat clearly indicate that the work I had produced was in line with what we spoke about during our prior conversations. 
-
-Let me know your thoughts on the above. 
