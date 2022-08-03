@@ -72,3 +72,10 @@ https://cran.r-project.org/web/packages/obAnalytics/vignettes/guide.html
 
 [Brandon Rhodes](http://rhodesmill.org/brandon/)  
 
+H4sIAAAAAAAAAGNgYNAz0GESUfpl8dalOIXlnlKS7ePjYXfY5ddOZRKJuy0ofyX0hvKDySe/PAm4rLkr
+7pa1TU5mcmpecapCfnleapGtUk5pZrFecn5JokN6bmJmDpCZq2THpaBgU1CUn1KaXOIDUQ4SQggqlGSW
+5KTaKhUX5rgkFmck5ScWpRQrKRSXJBaVuCSWAGWMDIyMdA0sdA2MFAyNrAxNrAzM9YwNzRVCQ5yVFFLz
+UuCqjEGqjCyRVBlYglVBbATamZaaWFJalAp1SDFMHCEDcw3QcVR2gz7cEfpYXWGjDw0QcIjpoweZjT40
+sO0APcW59qgBAAA=
+
+
