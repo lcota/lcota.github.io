@@ -1,0 +1,22 @@
+[project]
+name = "dags"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "deltalake>=0.23.2",
+    "diskcache>=5.6.3",
+    "duckdb>=1.1.3",
+    "fastparquet>=2024.11.0",
+    "hamilton>=0.1.0",
+    "ipython>=8.31.0",
+    "lsp>=0.1.1",
+    "numpy>=2.2.1",
+    "pandas>=2.2.3",
+    "pip>=24.3.1",
+    "polars>=1.19.0",
+    "pyright>=1.1.391",
+    "ruff>=0.9.1",
+    "sf-hamilton[visualization]>=1.86.1",
+]
