@@ -1,0 +1,6 @@
+{
+	// Install LSP-json to get validation and autocompletion in this file.
+	"python.pythonPath": "/Users/lcota/miniconda3/envs/ds/",
+	"venvPath": ".",
+	"venv": "myenv",
+}
