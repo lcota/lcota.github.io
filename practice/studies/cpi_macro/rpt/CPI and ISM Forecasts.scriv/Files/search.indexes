@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SearchIndexes Version="1.0">
+    <Documents>
+        <Document ID="5">
+            <Title>Importance</Title>
+            <Text>Importance of the Project
+The importance of the research including what makes your research unique and/or the specific contribution you seek to make.</Text>
+        </Document>
+        <Document ID="6">
+            <Title>Research Question</Title>
+            <Text>Research Question(s)
+1. Can a combination of Inflation (CPI), ISM PMI and ISM NMI (proxies for GDP) inform asset allocation decisions? 
+2. Can forecasts of CPI, ISM PMI and ISM NMI be used to forecast returns for various asset classes (expressed via ETFs), to inform asset allocation decisions?
+</Text>
+        </Document>
+        <Document ID="7">
+            <Title>Purpose or Hypothesis</Title>
+            <Text>Purpose or Hypothesis
+The purpose or hypothesis of the research. This is a more general overview of your research.</Text>
+        </Document>
+        <Document ID="8">
+            <Title>Introduction</Title>
+            <Text>Introduction
+Introduction to the research including background, current research in the area, etc.</Text>
+        </Document>
+        <Document ID="10">
+            <Title>References</Title>
+            <Text>References
+Insert your references here. This includes pretty much everything read that has informed your research design. Make sure you use the format recommended by your discipline or organization. These examples are in Chicago.
+
+RD Bullard, Dumping in Dixie: Race, Class, and Environmental Quality (Westview Pr, 2000).
+RD Bullard, “Environmental Justice in the 21st Century: Race Still Matters,” Phylon (1960-) (2001): 151-71.
+RL Bunch, and RE Lloyd, “The Cognitive Load of Geographic Information,” The Professional Geographer 58, no. 2 (2006): 209-20.
+M Checker, Polluted Promises: Environmental Racism and the Search for Justice in a Southern Town (NYU Press, 2005).
+M Granovetter, “The Strength of Weak Ties: A Network Theory Revisited,” Sociological theory 1 (1983): 201-33.
+MS Granovetter, “The Strength of Weak Ties,” The American Journal of Semiotics 78, no. 6 (1973): 1360.
+JK Jung, and S Elwood, “Extending the Qualitative Capabilities of GIS: Computer-Aided Qualitative Gis,” Transactions in GIS 14, no. 1 (2010): 63-87.
+MP Kwan, and G Ding, “Geo-Narrative: Extending Geographic Information Systems for Narrative Analysis in Qualitative and Mixed-Method Research,” The Professional Geographer 60, no. 4 (2008): 443-65.
+
+
+</Text>
+        </Document>
+        <Document ID="11">
+            <Title>Budget</Title>
+            <Text>Budget
+This should be as detailed as possible but simple to understand. A simple table with line items should suffice. Any descriptions or justifications can be done below the table.
+
+
+Line Item
+Amount
+
+
+
+
+
+
+Total
+
+
+
+</Text>
+        </Document>
+        <Document ID="12">
+            <Title>Work Plan</Title>
+            <Text>Work Plan
+This is arguably the most important part of the proposal as it shows how you will conduct your study. As such, it should be as realistic as possible and very detailed. For my proposal I broke it down by what I intended to accomplish each month.
+
+August
+1.	Determine survey questions
+
+October
+2.	IRB request - 2 months
+3.	Meet with committee
+
+November
+4.	Mail surveys
+5.	Data Entry
+6.	Submit abstract for professional conference paper or poster presentation
+
+December
+7.	Data Entry
+
+January
+8.	Data analysis and write-ups
+9.	Begin writing thesis draft 
+10.	Brown bag presentation to department
+
+February - April
+11.	Continue writing thesis and revise when necessary
+12.	Submit draft to committee for review 
+
+May
+13.	Final draft complete by end of May with committee revisions
+</Text>
+        </Document>
+        <Document ID="13">
+            <Title>Methods</Title>
+            <Text>Methods of Analysis
+The research methodology you will employ including location, data collection techniques, analysis techniques, etc.</Text>
+        </Document>
+        <Document ID="18">
+            <Title>Misc</Title>
+        </Document>
+        <Document ID="19">
+            <Title>Research Steps</Title>
+            <Text>Steps for Research Design
+Frame the question you wish to ask  
+Find the appropriate data to answer the question
+Choose the analytical method appropriate to answer question
+Process the data using the chosen method
+Review and question the results (refining the approach by collecting more data and improving the analysis)
+Present your results using the appropriate media</Text>
+        </Document>
+        <Document ID="20">
+            <Title>About</Title>
+            <Text>THESIS PROPOSAL TEMPLATE
+
+About This Template
+This template is designed to produce a standard 15-page research or thesis proposal. Bear in mind, however, that your department or the organisation to which you are submitting a proposal may have specific formatting requirements - it’s always best to check.
+
+How To Use This Template
+Rename the Draft folder in the binder to the title of your proposal (when you first create the project, you will notice that the Draft folder has been given the temporary name “&lt;Proposal Title&gt;”).
+Edit the files inside the Draft folder to fill in your proposal.
+Use File &gt; Compile… to compile your proposal ready for printing or export. The Compile settings have been set up appropriately, so you only need to change them if you wish to tweak things.
+
+Author
+This project template was created and kindly donated by Robert Brimhall, who is in no way affiliated with Literature &amp; Latte.
+
+Final Note
+Scrivener project templates are flexible and are not intended to restrict you to a particular workflow. You can change, delete or move the files and folders contained in the template and you can create your own templates by setting up a skeletal project with the files, folders and settings you would like to use for new projects and using File &gt; Save As Template.</Text>
+        </Document>
+        <Document ID="26">
+            <Title>Resources</Title>
+        </Document>
+        <Document ID="27">
+            <Title>Notes</Title>
+            <Text>Any documents you want to refer to as you write should be placed here.</Text>
+        </Document>
+        <Document ID="28">
+            <Title>Abstract</Title>
+            <Text>Abstract
+Insert the abstract here. The abstract should summarize your research in clear and concise language. You should write your abstract with the idea that it may be the only section that will actually be read and the sole representation of your research. 
+
+Some primary factors that you should consider for the abstract:
+
+Motivation: Why do we care?
+Problem statement: What are you trying to address?
+Approach: How will you address the problem?
+Results: What is the answer or expected answer?
+Conclusions: What are the implications?</Text>
+            <Notes>The abstract should summarize your research in clear and concise language. You should write your abstract with the idea that it may be the only section that will actually be read and the sole representation of your research. 
+
+Some primary factors that you should consider for the abstract:
+
+Motivation: Why do we care?
+Problem statement: What are you trying to address?
+Approach: How will you address the problem?
+Results: What is the answer or expected answer?
+Conclusions: What are the implications?</Notes>
+        </Document>
+        <Document ID="29">
+            <Title>Cover</Title>
+            <Text>Thesis Proposal
+
+&lt;$fullname&gt;
+Degree and Program
+Department
+University Name
+
+
+
+
+
+Committee Chair(s)
+
+______________________________________
+Professor Runciter, Ph. D
+
+______________________________________
+Professor Jefferson, Ph. D
+
+Committee Member(s)
+
+______________________________________
+Professor Weishaupt, Ph. D
+
+______________________________________
+Professor Wilson, Ph. D
+
+
+
+
+
+
+
+
+&lt;$longdate&gt;</Text>
+        </Document>
+        <Document ID="30">
+            <Title>Style Guidelines</Title>
+            <Text>The following web resources may be of use as style guidelines when putting together your proposal:
+
+http://www.chicagomanualofstyle.org/tools_citationguide.html
+https://owl.english.purdue.edu/owl/resource/717/01/
+https://owl.english.purdue.edu/owl/resource/747/1/</Text>
+        </Document>
+        <Document ID="31">
+            <Title>Introduction</Title>
+        </Document>
+        <Document ID="32">
+            <Title>Describe Data Used</Title>
+        </Document>
+        <Document ID="33">
+            <Title>Results</Title>
+        </Document>
+        <Document ID="34">
+            <Title>Trading Rule &amp; Methodology</Title>
+        </Document>
+        <Document ID="35">
+            <Title>Turnleaf Analytics</Title>
+            <Text>Several data sets from Turnleaf Analytics were used to carry out this project. The first is a multi-variate series of data containing US YoY Change in CPI forecasts, non-seasonally adjusted, for forward looking periods ranging from 1 month — 12 months, with a periodicity of 1 month. Additional data sets include 1 month - 12 month predictions of ISM PMI (Purchasing Manufacturer’s Index) and ISM NMI (Non-Manufacturing Index). The latter two data series are meant to serve as a proxy for future GDP. </Text>
+        </Document>
+        <Document ID="36">
+            <Title>ETFs</Title>
+            <Text>The ETFs chosen for this study cover Equities, Debt and Commodities markets. Each asset class has a representative ETF which tracks the broader asset class - AGG for fixed income ETFs, SPY for equities ETFs and DBC/GSG for commodities ETFs. 
+
+
+Class
+Ticker
+Name
+Debt
+AGG
+iShares Core U.S. Aggregate Bond ETF
+Debt
+VCIT
+Vanguard Intermediate-Term Corporate Bond ETF
+Debt
+SPIB
+SPDR Portfolio Intermediate Term Corporate Bond ETF
+Debt
+BSV
+Vanguard Short-Term Bond ETF
+Debt
+JNK
+SPDR Bloomberg High Yield Bond ETF
+Debt
+TBT
+ProShares UltraShort 20+ Year Treasury (Levered)
+Debt
+TMV
+Direxion Daily 20 Year Plus Treasury Bear 3x Levered
+Debt
+VCLT
+Vanguard Long-Term Corporate Bond ETF
+Debt
+LQD
+iShares iBoxx $ Investment Grade Corporate Bond ETF
+Debt
+TMF
+Direxion Daily 20 Year Plus Treasury Bull 3x Levered
+Equity
+SPY
+SPDR S&amp;P 500 ETF Trust
+Equity
+SPYG
+SPDR Portfolio S&amp;P 500 Growth ETF
+Equity
+SPLG
+SPDR Portfolio S&amp;P 500 ETF
+Equity
+KBE
+SPDR S&amp;P Bank ETF
+Equity
+XRT
+SPDR S&amp;P Retail ETF
+Commod.
+DBC
+Invesco DB Commodity Index Tracking Fund
+Commod.
+GSG
+iShares S&amp;P GSCI Commodity-Indexed Trust
+Commod.
+UNG
+United States Natural Gas Fund LP
+Commod.
+XOP
+SPDR S&amp;P Oil &amp; Gas Exploration &amp; Production ETF
+</Text>
+        </Document>
+    </Documents>
+</SearchIndexes>

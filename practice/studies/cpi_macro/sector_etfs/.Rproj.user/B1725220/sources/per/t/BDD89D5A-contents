@@ -1,0 +1,253 @@
+library(data.table)
+library(lubridate)
+library(stringr)
+library(stringi)
+library(xts)
+library(quantmod)
+
+
+fname <- "C:/Dropbox/prj/bondsentiment/data/News_Feed/news_sentiment.csv"
+dt <- fread(fname)
+
+# counts <- dt[, .N, by=Country]
+# as.matrix(counts)
+# 
+# counts
+# dim(dt)
+
+# filtering out non-USA results
+# dt[Country=='USA', .N]
+# dim(dt)
+dt <- dt[Country=='USA']
+# filter out relevance < 1
+# dt <- dt[Relevance >= 1.]
+# dim(dt)
+# dt$index <- index(dt)
+# dt$StoryID <- NULL
+
+
+# How many distinct tickers? --------------------------------------------------------
+length(unique(dt$Ticker))
+
+# Number of news sources? 
+length(unique(dt$Source))
+unique(dt$Source)
+
+head(dt)
+hist(dt$Relevance)
+hist(dt$Confidence)
+hist(dt$Novelty)
+hist(dt$MarketImpactScore)
+
+summary(dt$Novelty)
+dt[Novelty>1000]
+
+
+# Simplest possible step would be to construct an index of all sentiment values
+# Next simplest would be to weight by Confidence, or filter out lower confidence values (< .95 for example)
+
+dim(dt[Confidence>=.95])
+dim(dt[Confidence<.95])
+
+
+# create timestamps and monthcodes for entire data set
+mfun = function(d){
+  return(12*(year(d) - 2000) + month(d) )
+}
+wkfun = function(d){
+  return(52*(year(d) - 2000) + week(d))
+}
+
+catfun <- function(s, pattern){
+  retcode = 0
+  ismatch <- str_locate(s, pattern=pattern)
+  if (is.integer(ismatch[1]) & ismatch[1] >= 0){
+    retcode = 1
+  }
+
+  return(retcode)
+}
+
+
+
+unique(dt$Novelty)
+str(dt)
+dt[, dtime:=lubridate::as_datetime(Timestamp) ]
+dt[, mthcode:=mfun(dtime)]
+dt[, weekcode:=wkfun(dtime)]
+dt[, ddate:=date(dtime)]
+dt[, month:=month(ddate)]
+dt[, year:=year(ddate)]
+dt[, dayofweek:=day(ddate)]
+dt[,monthname:=month(ddate, label=T)]
+dt[,weekday:=wday(ddate, label=T)]
+dt$Timestamp <- NULL
+
+# #######################################################
+# Add columns for dummy vars
+# 
+dt[,ALEX:= 0]; dt[Events %like% 'ALEX', ALEX:=1]
+dt[,ACC:= 0]; dt[Events %like% 'ACC', ACC:=1]
+dt[,AST:= 0]; dt[Events %like% 'AST', AST:=1]
+dt[,BNQ:= 0]; dt[Events %like% 'BNQ', BNQ:=1]
+dt[,BUY:= 0]; dt[Events %like% 'BUY', BUY:=1]
+dt[,CBT:= 0]; dt[Events %like% 'CBT', CBT:=1]
+dt[,COV:= 0]; dt[Events %like% 'COV', COV:=1]
+dt[,CPA:= 0]; dt[Events %like% 'CPA', CPA:=1]
+dt[,CPG:= 0]; dt[Events %like% 'CPG', CPG:=1]
+dt[,DEB:= 0]; dt[Events %like% 'DEB', DEB:=1]
+dt[,DIV:= 0]; dt[Events %like% 'DIV', DIV:=1]
+dt[,DMNA:= 0]; dt[Events %like% 'DMNA', DMNA:=1]
+dt[,DRV:= 0]; dt[Events %like% 'DRV', DRV:=1]
+dt[,ERN:= 0]; dt[Events %like% 'ERN', ERN:=1]
+dt[,EST:= 0]; dt[Events %like% 'EST', EST:=1]
+dt[,ETF:= 0]; dt[Events %like% 'ETF', ETF:=1]
+dt[,FDA:= 0]; dt[Events %like% 'FDA', FDA:=1]
+dt[,GDC:= 0]; dt[Events %like% 'GDC', GDC:=1]
+dt[,GOV:= 0]; dt[Events %like% 'GOV', GOV:=1]
+dt[,HFD:= 0]; dt[Events %like% 'HFD', HFD:=1]
+dt[,IMB:= 0]; dt[Events %like% 'IMB', IMB:=1]
+dt[,INS:= 0]; dt[Events %like% 'INS', INS:=1]
+dt[,IPO:= 0]; dt[Events %like% 'IPO', IPO:=1]
+dt[,LGL:= 0]; dt[Events %like% 'LGL', LGL:=1]
+dt[,MFD:= 0]; dt[Events %like% 'MFD', MFD:=1]
+dt[,MGT:= 0]; dt[Events %like% 'MGT', MGT:=1]
+dt[,MNA:= 0]; dt[Events %like% 'MNA', MNA:=1]
+dt[,OPS:= 0]; dt[Events %like% 'OPS', OPS:=1]
+dt[,OWN:= 0]; dt[Events %like% 'OWN', OWN:=1]
+dt[,PRE:= 0]; dt[Events %like% 'PRE', PRE:=1]
+dt[,RAT:= 0]; dt[Events %like% 'RAT', RAT:=1]
+dt[,REG:= 0]; dt[Events %like% 'REG', REG:=1]
+dt[,TRD:= 0]; dt[Events %like% 'TRD', TRD:=1]
+
+# #######################################################
+# MarketImpact
+#
+# dt[,ALEX:= 0]; dt[Events %like% 'ALEX', ALEX:=MarketImpactScore]
+# dt[,ACC:= 0]; dt[Events %like% 'ACC', ACC:=MarketImpactScore]
+# dt[,AST:= 0]; dt[Events %like% 'AST', AST:=MarketImpactScore]
+# dt[,BNQ:= 0]; dt[Events %like% 'BNQ', BNQ:=MarketImpactScore]
+# dt[,BUY:= 0]; dt[Events %like% 'BUY', BUY:=MarketImpactScore]
+# dt[,CBT:= 0]; dt[Events %like% 'CBT', CBT:=MarketImpactScore]
+# dt[,COV:= 0]; dt[Events %like% 'COV', COV:=MarketImpactScore]
+# dt[,CPA:= 0]; dt[Events %like% 'CPA', CPA:=MarketImpactScore]
+# dt[,CPG:= 0]; dt[Events %like% 'CPG', CPG:=MarketImpactScore]
+# dt[,DEB:= 0]; dt[Events %like% 'DEB', DEB:=MarketImpactScore]
+# dt[,DIV:= 0]; dt[Events %like% 'DIV', DIV:=MarketImpactScore]
+# dt[,DMNA:= 0]; dt[Events %like% 'DMNA', DMNA:=MarketImpactScore]
+# dt[,DRV:= 0]; dt[Events %like% 'DRV', DRV:=MarketImpactScore]
+# dt[,ERN:= 0]; dt[Events %like% 'ERN', ERN:=MarketImpactScore]
+# dt[,EST:= 0]; dt[Events %like% 'EST', EST:=MarketImpactScore]
+# dt[,ETF:= 0]; dt[Events %like% 'ETF', ETF:=MarketImpactScore]
+# dt[,FDA:= 0]; dt[Events %like% 'FDA', FDA:=MarketImpactScore]
+# dt[,GDC:= 0]; dt[Events %like% 'GDC', GDC:=MarketImpactScore]
+# dt[,GOV:= 0]; dt[Events %like% 'GOV', GOV:=MarketImpactScore]
+# dt[,HFD:= 0]; dt[Events %like% 'HFD', HFD:=MarketImpactScore]
+# dt[,IMB:= 0]; dt[Events %like% 'IMB', IMB:=MarketImpactScore]
+# dt[,INS:= 0]; dt[Events %like% 'INS', INS:=MarketImpactScore]
+# dt[,IPO:= 0]; dt[Events %like% 'IPO', IPO:=MarketImpactScore]
+# dt[,LGL:= 0]; dt[Events %like% 'LGL', LGL:=MarketImpactScore]
+# dt[,MFD:= 0]; dt[Events %like% 'MFD', MFD:=MarketImpactScore]
+# dt[,MGT:= 0]; dt[Events %like% 'MGT', MGT:=MarketImpactScore]
+# dt[,MNA:= 0]; dt[Events %like% 'MNA', MNA:=MarketImpactScore]
+# dt[,OPS:= 0]; dt[Events %like% 'OPS', OPS:=MarketImpactScore]
+# dt[,OWN:= 0]; dt[Events %like% 'OWN', OWN:=MarketImpactScore]
+# dt[,PRE:= 0]; dt[Events %like% 'PRE', PRE:=MarketImpactScore]
+# dt[,RAT:= 0]; dt[Events %like% 'RAT', RAT:=MarketImpactScore]
+# dt[,REG:= 0]; dt[Events %like% 'REG', REG:=MarketImpactScore]
+# dt[,TRD:= 0]; dt[Events %like% 'TRD', TRD:=MarketImpactScore]
+
+
+# #######################################################
+# Confidence*MarketImpactScore
+# 
+# dt[,ALEX:= 0]; dt[Events %like% 'ALEX', ALEX:=Confidence*MarketImpactScore]
+# dt[,ACC:= 0]; dt[Events %like% 'ACC', ACC:=Confidence*MarketImpactScore]
+# dt[,AST:= 0]; dt[Events %like% 'AST', AST:=Confidence*MarketImpactScore]
+# dt[,BNQ:= 0]; dt[Events %like% 'BNQ', BNQ:=Confidence*MarketImpactScore]
+# dt[,BUY:= 0]; dt[Events %like% 'BUY', BUY:=Confidence*MarketImpactScore]
+# dt[,CBT:= 0]; dt[Events %like% 'CBT', CBT:=Confidence*MarketImpactScore]
+# dt[,COV:= 0]; dt[Events %like% 'COV', COV:=Confidence*MarketImpactScore]
+# dt[,CPA:= 0]; dt[Events %like% 'CPA', CPA:=Confidence*MarketImpactScore]
+# dt[,CPG:= 0]; dt[Events %like% 'CPG', CPG:=Confidence*MarketImpactScore]
+# dt[,DEB:= 0]; dt[Events %like% 'DEB', DEB:=Confidence*MarketImpactScore]
+# dt[,DIV:= 0]; dt[Events %like% 'DIV', DIV:=Confidence*MarketImpactScore]
+# dt[,DMNA:= 0]; dt[Events %like% 'DMNA', DMNA:=Confidence*MarketImpactScore]
+# dt[,DRV:= 0]; dt[Events %like% 'DRV', DRV:=Confidence*MarketImpactScore]
+# dt[,ERN:= 0]; dt[Events %like% 'ERN', ERN:=Confidence*MarketImpactScore]
+# dt[,EST:= 0]; dt[Events %like% 'EST', EST:=Confidence*MarketImpactScore]
+# dt[,ETF:= 0]; dt[Events %like% 'ETF', ETF:=Confidence*MarketImpactScore]
+# dt[,FDA:= 0]; dt[Events %like% 'FDA', FDA:=Confidence*MarketImpactScore]
+# dt[,GDC:= 0]; dt[Events %like% 'GDC', GDC:=Confidence*MarketImpactScore]
+# dt[,GOV:= 0]; dt[Events %like% 'GOV', GOV:=Confidence*MarketImpactScore]
+# dt[,HFD:= 0]; dt[Events %like% 'HFD', HFD:=Confidence*MarketImpactScore]
+# dt[,IMB:= 0]; dt[Events %like% 'IMB', IMB:=Confidence*MarketImpactScore]
+# dt[,INS:= 0]; dt[Events %like% 'INS', INS:=Confidence*MarketImpactScore]
+# dt[,IPO:= 0]; dt[Events %like% 'IPO', IPO:=Confidence*MarketImpactScore]
+# dt[,LGL:= 0]; dt[Events %like% 'LGL', LGL:=Confidence*MarketImpactScore]
+# dt[,MFD:= 0]; dt[Events %like% 'MFD', MFD:=Confidence*MarketImpactScore]
+# dt[,MGT:= 0]; dt[Events %like% 'MGT', MGT:=Confidence*MarketImpactScore]
+# dt[,MNA:= 0]; dt[Events %like% 'MNA', MNA:=Confidence*MarketImpactScore]
+# dt[,OPS:= 0]; dt[Events %like% 'OPS', OPS:=Confidence*MarketImpactScore]
+# dt[,OWN:= 0]; dt[Events %like% 'OWN', OWN:=Confidence*MarketImpactScore]
+# dt[,PRE:= 0]; dt[Events %like% 'PRE', PRE:=Confidence*MarketImpactScore]
+# dt[,RAT:= 0]; dt[Events %like% 'RAT', RAT:=Confidence*MarketImpactScore]
+# dt[,REG:= 0]; dt[Events %like% 'REG', REG:=Confidence*MarketImpactScore]
+# dt[,TRD:= 0]; dt[Events %like% 'TRD', TRD:=Confidence*MarketImpactScore]
+
+
+
+# prepare daily returns data set ----------------------------------------------------
+
+drtn <- fread(file="data/News_Feed/US_Universe_Returns_2000_20200430.txt")
+drtn[, Date:=as.POSIXct(Date,format='%m/%d/%Y')]
+drtn[, D1:=as.numeric(D1)]
+drtn[, Return:=as.numeric(Return)]
+
+
+saveRDS(drtn, file="data/daily_returns.rds")
+
+# dates <- dailyReturns$Date
+
+# Create the monthly ticker lists ---------------------------------------------------
+drtn <- readRDS(file="data/daily_returns.rds")
+tickermap <- drtn[,c("Date", "Ticker")]
+
+tickermap[,mthcode:=mfun(Date)]
+saveRDS(tickermap, file="data/tickermap.RDS")
+
+
+# filter news data to exclude all tickers not in unique_tickers list
+unique_tickers <- unique(tickermap$Ticker)
+dt <- dt[Ticker %in% unique_tickers]
+# remove unnecessary columns (Events, Isin)
+# dt$Events <- NULL
+# dt$Isin <- NULL
+
+# save data set
+# dt$index <- NULL
+saveRDS(dt, file="data/us_newsfeed_sentiment.RDS")
+fwrite(dt, file="data/us_news_sent.csv", append=F, quote=F, sep=",")
+fwrite(head(dt), "data/us_news_sent_small.csv", append=F, quote=F, sep=",")
+# saveRDS(dt, file="data/us_sent_mktimpact.RDS")
+# saveRDS(dt, file="data/us_sent_mktimp_conf.RDS")
+
+
+# sdt <- stri_split_fixed(tickermap$Date[1], pattern="/")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

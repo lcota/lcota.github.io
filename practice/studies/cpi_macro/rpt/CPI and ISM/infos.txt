@@ -1,0 +1,4 @@
+Title:          CPI, ISM PMI & ISM NMI - Classifying Asset Return Profiles
+Subtitle:       Using Turnleaf Analytics forecasts to Characterize Asset Returns
+Author:         Luis J. Cota
+Email:          luis.cota@gmail.com

@@ -1,0 +1,4 @@
+Title:          Return Profiles & Inflation + GDP forecasts
+Subtitle:       Using Turnleaf forecasts of Inflation, ISM PMI and ISM NMI
+Author:         Luis J. Cota
+Email:          luis.cota@gmail.com

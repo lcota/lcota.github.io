@@ -1,0 +1,81 @@
+What is the Next Step
+===================================
+
+* Load ETF data
+* Save to Disk
+* Calc total returns
+* Save to Disk
+
+* Load CPI / ISM data & Align Dates
+* Create refmonthyear column
+
+* Examine relationship of CPI to stock returns
+* Plot CPI with shaded regions, x > 3% inflation,  1% < x < 3%, x < 1%
+* Create mask of high/medium/low CPI
+
+* Remove short history tickers (XT, IHI)
+* create monthly returns series
+* add ref month year col to monthly returns
+* create monthly total return series
+* merge monthly returns with cpifred data
+* create HML for PMI and NMI 
+
+* Summary table of avg monthly return per sector for HML CPI
+* Summary table of avg monthly return per sector for HML NMI
+* Summary table of avg monthly return per sector for HML PMI
+* barchart showing returns per sector in each regime - CPI 
+* barchart showing sector returns | NMI regime 
+* barchart showing sector returns | PMI regime 
+* Parse and join Sector Index data 
+
+* Create forward returns dataset
+
+* Create mean monthly returns for fwd return periods for CPI/PMI/NMI HML regimes
+* Test for significance of excess returns != 0
+
+* Trading Rules 
+	Forward periods: 1M, 3M, 6M, 1Y
+	Backward Window: 1M, 3M, 6M, 1Y
+
+	Is Current - 3Mth ago higher? then rising
+	Is current - rolling 12month higher? then rising
+	Are returns higher or lower compared to unconditional returns?
+
+	What is the trading rule? Long what, short what, when? 
+
+
+	What is the behavior of cointegrated relationships? 
+
+* Next Steps 
+	* Apply trading rules using Forecasts
+	* Write draft of 1st paper
+
+* Follow up paper 1
+	* Apply trading rule using NMI/PMI backward looking sector selection
+
+
+* Follow up paper 2
+	* Implement Fama French & test improvement with CPI / NMI / PMI to estimate forward returns
+
+
+
+** If CPI is rising, what do forward returns look like?  
+** If PMI is rising, what do forward returns look like? 
+** If NMI is rising, what do forward returns look like?  
+   
+
+
+ * Next Steps: 
+ * Writeup of historical empirical relationship between CPI and Equity Sectors
+ 	Charts of regimes in Excel
+ 	Charts of sectors x CPI returns in Excel 
+ 	Transfer summary notes to Word Document format for Turnleaf
+ 	
+
+
+
+
+
+
+
+   

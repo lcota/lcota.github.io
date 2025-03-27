@@ -1,0 +1,24 @@
+Next Step
+===================================
+* Load ETF data
+* Save to Disk
+* Calc total returns
+* Save to Disk
+
+* Load CPI / ISM data & Align Dates
+* Create refmonthyear column
+
+* Examine relationship of CPI to stock returns
+* Plot CPI with shaded regions, x > 3% inflation,  1% < x < 3%, x < 1%
+* Create mask of high/medium/low CPI
+
+* Remove short history tickers (XT, IHI)
+* create monthly returns series
+* add ref month year col to monthly returns
+* create monthly total return series
+* merge monthly returns with cpifred data
+* Plot regression line of Sector Return ~ CPI 
+
+
+* Summary table of avg monthly return per sector for high/med/low CPI
+* barchart showing returns per sector in each regime
