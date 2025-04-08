@@ -1,7 +1,7 @@
 import marimo
 
 __generated_with = "0.12.4"
-app = marimo.App(width="medium")
+app = marimo.App(width="full")
 
 
 @app.cell(hide_code=True)
@@ -12,16 +12,8 @@ def _(mo):
 
 @app.cell
 def _():
-    # magic command not supported in marimo; please file an issue to add support
-    # %load_ext autoreload
-    # '%autoreload 2' command supported automatically in marimo
-    return
-
-
-@app.cell
-def _():
-    # '%matplotlib inline' command supported automatically in marimo
-    return
+    import marimo as mo
+    return (mo,)
 
 
 @app.cell
@@ -65,35 +57,6 @@ def _(plt):
     plt.rcParams["font.family"] = "sans-serif"
     plt.rcParams["font.sans-serif"] = "Raleway"
     plt.rcParams["font.style"] = "normal"
-    # plt.rcParams['font.weight'] = 'Light'
-    # plt.rcParams['font.serif'] = 'Times New Roman'
-    # plt.rcParams['font.size'] = 12
-    # font.cursive
-    # font.family
-    # font.fantasy
-    # font.monospace
-    # font.sans-serif
-    # font.serif
-    # font.size
-    # font.stretch
-    # font.style
-    # font.variant
-    # font.weight
-    # legend.fontsize
-    # legend.title_fontsize
-    # mathtext.fontset
-    # pdf.fonttype
-    # pdf.use14corefonts
-    # pgf.rcfonts
-    # ps.fonttype
-    # svg.fonttype
-
-    # plot_trading_rule(dfXcpi, dfrtn, xcol=xcol, rtn_col=rtn_col,
-    #                   weights=weights, save_plot=True, show_plot=True)
-
-    # for k in plt.rcParams.keys():
-    #     if "font" in k:
-    #         print(k)
     return
 
 
@@ -1446,12 +1409,6 @@ def _(
     if show_plot:
         plt.show()
     return (figname,)
-
-
-@app.cell
-def _():
-    import marimo as mo
-    return (mo,)
 
 
 if __name__ == "__main__":
