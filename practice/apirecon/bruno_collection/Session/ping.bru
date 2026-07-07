@@ -1,0 +1,23 @@
+meta {
+  name: Ping (session keepalive)
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/ping
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: {{authToken}}
+  Content-Type: application/json
+  Accept: */*
+  User-Agent: Peloton/3.0 CFNetwork/1
+}
+
+body:json {
+  {
+  }
+}

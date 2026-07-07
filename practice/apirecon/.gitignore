@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Captured traffic (may contain credentials)
+api_log.jsonl
+
+# Token cache
+.peloton/
+token.json
+
+# Environment secrets
+.env
+
+# Task results
+results/
+tasks.json
